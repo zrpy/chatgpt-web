@@ -24,9 +24,9 @@ export type Provider = {
 }
 
 const openAiEndpoints = {
-  completions: '/v1/chat/completions',
-  models: '/v1/models',
-  embeddings: '/v1/embeddings'
+  completions: '/v2/chat/completions',
+  models: '/v2/models',
+  embeddings: '/v2/embeddings'
 }
 
 export const providers: Provider[] = [
@@ -126,7 +126,7 @@ export const providers: Provider[] = [
     apiBase: '',
     endpoints: openAiEndpoints,
     image: {
-      endpoint: '/v1/images/generations',
+      endpoint: '/v2/images/generations',
       responseFormat: 'b64_json'
     },
     documentationUrl: 'https://platform.openai.com/docs/api-reference'
